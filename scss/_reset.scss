@@ -51,14 +51,19 @@ table {
 
 *, *::before, *::after{
 	box-sizing:border-box;
+
 }
 
 body{
-	font-family: 'Open Sans', "Helvetica Neue", "PingFang TC", sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
 }
 
 img{
 	max-width: 100%;
 	height: auto;
-	vertical-align: middle;
+	display: block;
+}
+
+a{
+	display: block;
 }
