@@ -15,8 +15,8 @@ $c_gray:#747474;
     }
 }
 
-@mixin mobile{
-    @media(max-width:375px){
+@mixin mobile_L{
+    @media(max-width:414px){
         @content;
     }
 }
@@ -35,7 +35,7 @@ $c_gray:#747474;
         padding: 0 80px;
     }
 
-    @include mobile {
+    @include mobile_L {
         padding: 0 20px;
     }
 }

@@ -89,7 +89,7 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .container {
     padding: 0 20px;
   }
@@ -175,7 +175,7 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .header {
     padding: 16px 20px;
     border-bottom: 2px solid #FFD153;
@@ -196,7 +196,7 @@ a {
   -ms-interpolation-mode: nearest-neighbor;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .header .logo {
     width: 140px;
   }
@@ -231,7 +231,7 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .bg_main {
     height: auto;
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
@@ -244,7 +244,7 @@ a {
   height: 60vh;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .hero_box {
     flex-direction: column;
     padding-top: 32px;
@@ -291,7 +291,7 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .slogan_box h1 {
     font-size: 32px;
   }
@@ -321,7 +321,7 @@ a {
   margin-left: auto;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .p_main {
     width: 90%;
     margin: auto;
@@ -339,6 +339,7 @@ a {
   color: #fff;
   padding: 27px 0;
   text-decoration: none;
+  z-index: 299;
   right: 48px;
   bottom: 24px;
 }
@@ -347,7 +348,7 @@ a {
   background: #2e8687;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .back_top {
     height: 50px;
     width: 50px;
@@ -366,7 +367,7 @@ a {
   background-position: -222px -180px,108% 32%,5% 66%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .bg_content {
     background-size: 126px 126px,310px 310px,150px 150px;
     background-position: -77px 75px,108% 32%,5% 66%;
@@ -493,11 +494,23 @@ a {
   padding-top: 104px;
 }
 
+@media (max-width: 414px) {
+  .info_comment {
+    flex-wrap: wrap;
+  }
+}
+
 .comment_card {
   padding: 48px 32px 24px 32px;
   position: relative;
   width: 30%;
   background: #fff;
+}
+
+@media (max-width: 414px) {
+  .comment_card {
+    width: 100%;
+  }
 }
 
 .comment_card .pic_head {

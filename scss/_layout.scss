@@ -9,7 +9,7 @@
         padding: 24px 80px;
     }
 
-    @include mobile {
+    @include mobile_L {
         padding: 16px 20px;
         border-bottom: 2px solid #FFD153;
     }
@@ -28,7 +28,7 @@
         /* IE8+           */
         -ms-interpolation-mode:nearest-neighbor;
 
-        @include mobile{
+        @include mobile_L{
             width: 140px;
             
         }

@@ -21,7 +21,7 @@
         height: 60vh;
     }
 
-    @include mobile{
+    @include mobile_L{
         height: auto;
         background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
         background-size: 334px auto;
@@ -33,7 +33,7 @@
 .hero_box{
     height: 60vh;
 
-    @include mobile{
+    @include mobile_L{
         flex-direction: column;
         padding-top: 32px;
         height: 80vh;
@@ -74,7 +74,7 @@
             font-size: 36px;
         }
 
-        @include mobile {
+        @include mobile_L {
             font-size: 32px;
         }
 
@@ -100,7 +100,7 @@
     width: 49%;
     margin-left: auto;
 
-    @include mobile{
+    @include mobile_L{
         width: 90%;
         margin: auto;
     }
@@ -119,6 +119,7 @@
     color:#fff;
     padding: 27px 0;
     text-decoration: none;
+    z-index: 299;
 
     right: 48px;
     bottom: 24px;
@@ -127,7 +128,7 @@
         background: darken($c_base,20%);
     }
 
-    @include mobile {
+    @include mobile_L {
         height: 50px;
         width: 50px;
         font-size: 14px;
@@ -145,7 +146,7 @@
     background-size: 360px 360px,310px 310px,150px 150px;
     background-position: -222px -180px,108% 32%,5% 66%;
 
-    @include mobile{
+    @include mobile_L{
         background-size: 126px 126px,310px 310px,150px 150px;
         background-position: -77px 75px,108% 32%,5% 66%;
     }
@@ -278,6 +279,10 @@
 
 .info_comment{
     padding-top: 104px;
+
+    @include mobile_L{
+        flex-wrap: wrap;
+    }
 }
 
 .comment_card{
@@ -285,6 +290,10 @@
     position: relative;
     width: 30%;
     background: #fff;
+
+    @include mobile_L{
+        width: 100%;
+    }
 
     .pic_head{
         border-radius: 50%;
