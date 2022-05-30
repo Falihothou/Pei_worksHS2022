@@ -11,22 +11,52 @@
     background-size: contain,360px 360px;
     background-position: 100% 0%,-222px calc(100% + 180px);
 
-    position: relative;
+    @include pad_L{
+        background-size: 60%,360px 360px;
+        height: 80vh;
+    }
+
+    @include pad{
+        background-size: 50%,360px 360px;
+        height: 60vh;
+    }
+
+    @include mobile{
+        height: auto;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
+        background-size: 334px auto;
+        background-position: center 93%;
+    }
 
 }
 
 .hero_box{
-    height: 69vh;
-    align-items: center;
+    height: 60vh;
+
+    @include mobile{
+        flex-direction: column;
+        padding-top: 32px;
+        height: 80vh;
+    }
+
+
 }
 
 .slogan_box{
+
+    @include pad{
+        margin-bottom: 32px;
+    }
 
     p{
         color: $c_base;
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 8px;
+
+        @include pad_L{
+            font-size: 16px;
+        }
     }
 
     h1{
@@ -35,27 +65,51 @@
         font-weight: bold;
         margin-bottom: 16px;
         line-height: 1.5;
+
+        @include pad_L {
+            font-size: 40px;
+        }
+
+        @include pad {
+            font-size: 36px;
+        }
+
+        @include mobile {
+            font-size: 32px;
+        }
+
     }
 
     h2{
         color: lighten($c_black, 30%);
         font-size: 20px;
         font-weight: bold;
+
+        @include pad_L{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        @include pad {
+            font-weight: 400;
+        }
     }
 }
 
 .p_main{
-    height: 100%;
     width: 49%;
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home.svg);
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: 100% center;
+    margin-left: auto;
+
+    @include mobile{
+        width: 90%;
+        margin: auto;
+    }
 
 }
 
 
 .back_top{
+    position: fixed;
     height: 70px;
     width: 70px;
     background: $c_base;
@@ -66,12 +120,21 @@
     padding: 27px 0;
     text-decoration: none;
 
-    position: absolute;
     right: 48px;
-    bottom: 23px;
+    bottom: 24px;
 
     &:hover{
         background: darken($c_base,20%);
+    }
+
+    @include mobile {
+        height: 50px;
+        width: 50px;
+        font-size: 14px;
+        padding: 18px 0;
+
+        right: 16px;
+        bottom: 16px;
     }
 }
 
@@ -81,6 +144,11 @@
     background-repeat: no-repeat;
     background-size: 360px 360px,310px 310px,150px 150px;
     background-position: -222px -180px,108% 32%,5% 66%;
+
+    @include mobile{
+        background-size: 126px 126px,310px 310px,150px 150px;
+        background-position: -77px 75px,108% 32%,5% 66%;
+    }
 
 }
 
@@ -132,6 +200,7 @@
     .sever_pic{
         border-radius: 12px 12px 0 0;
         height: 260px;
+        object-fit: cover;
     }
 
     h4{

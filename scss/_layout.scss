@@ -1,8 +1,37 @@
 .header{
-    padding: 24px 0;
+    padding: 24px 139px;
+
+    @include pad_L {
+        padding: 24px 100px;
+    }
+
+    @include pad {
+        padding: 24px 80px;
+    }
+
+    @include mobile {
+        padding: 16px 20px;
+        border-bottom: 2px solid #FFD153;
+    }
 
     .logo{
-        width: 218px;
+        max-width: 218px;
+
+        /* Firefox        */
+        image-rendering:-moz-crisp-edges;
+        /* Opera          */
+        image-rendering:-o-crisp-edges;
+        /* Safari         */
+        image-rendering:-webkit-optimize-contrast;
+        /* CSS3 Proposed  */
+        image-rendering:optimize-contrast;
+        /* IE8+           */
+        -ms-interpolation-mode:nearest-neighbor;
+
+        @include mobile{
+            width: 140px;
+            
+        }
     }
 }
 

@@ -72,8 +72,27 @@ a {
 }
 
 .container {
-  max-width: 1086px;
+  max-width: 1366px;
   margin: 0 auto;
+  padding: 0 139px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 .flex_sb {
@@ -141,11 +160,46 @@ a {
 }
 
 .header {
-  padding: 24px 0;
+  padding: 24px 139px;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 24px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 24px 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    padding: 16px 20px;
+    border-bottom: 2px solid #FFD153;
+  }
 }
 
 .header .logo {
-  width: 218px;
+  max-width: 218px;
+  /* Firefox        */
+  image-rendering: -moz-crisp-edges;
+  /* Opera          */
+  image-rendering: -o-crisp-edges;
+  /* Safari         */
+  image-rendering: -webkit-optimize-contrast;
+  /* CSS3 Proposed  */
+  image-rendering: optimize-contrast;
+  /* IE8+           */
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+@media (max-width: 375px) {
+  .header .logo {
+    width: 140px;
+  }
 }
 
 .footer {
@@ -161,12 +215,47 @@ a {
   background-repeat: no-repeat;
   background-size: contain,360px 360px;
   background-position: 100% 0%, -222px calc(100% + 180px);
-  position: relative;
+}
+
+@media (max-width: 992px) {
+  .bg_main {
+    background-size: 60%,360px 360px;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .bg_main {
+    background-size: 50%,360px 360px;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .bg_main {
+    height: auto;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
+    background-size: 334px auto;
+    background-position: center 93%;
+  }
 }
 
 .hero_box {
-  height: 69vh;
-  align-items: center;
+  height: 60vh;
+}
+
+@media (max-width: 375px) {
+  .hero_box {
+    flex-direction: column;
+    padding-top: 32px;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .slogan_box {
+    margin-bottom: 32px;
+  }
 }
 
 .slogan_box p {
@@ -174,6 +263,12 @@ a {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
+}
+
+@media (max-width: 992px) {
+  .slogan_box p {
+    font-size: 16px;
+  }
 }
 
 .slogan_box h1 {
@@ -184,22 +279,57 @@ a {
   line-height: 1.5;
 }
 
+@media (max-width: 992px) {
+  .slogan_box h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slogan_box h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 375px) {
+  .slogan_box h1 {
+    font-size: 32px;
+  }
+}
+
 .slogan_box h2 {
   color: #736669;
   font-size: 20px;
   font-weight: bold;
 }
 
+@media (max-width: 992px) {
+  .slogan_box h2 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 767px) {
+  .slogan_box h2 {
+    font-weight: 400;
+  }
+}
+
 .p_main {
-  height: 100%;
   width: 49%;
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home.svg);
-  background-repeat: no-repeat;
-  background-size: 90%;
-  background-position: 100% center;
+  margin-left: auto;
+}
+
+@media (max-width: 375px) {
+  .p_main {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 .back_top {
+  position: fixed;
   height: 70px;
   width: 70px;
   background: #56C4C5;
@@ -209,13 +339,23 @@ a {
   color: #fff;
   padding: 27px 0;
   text-decoration: none;
-  position: absolute;
   right: 48px;
-  bottom: 23px;
+  bottom: 24px;
 }
 
 .back_top:hover {
   background: #2e8687;
+}
+
+@media (max-width: 375px) {
+  .back_top {
+    height: 50px;
+    width: 50px;
+    font-size: 14px;
+    padding: 18px 0;
+    right: 16px;
+    bottom: 16px;
+  }
 }
 
 .bg_content {
@@ -224,6 +364,13 @@ a {
   background-repeat: no-repeat;
   background-size: 360px 360px,310px 310px,150px 150px;
   background-position: -222px -180px,108% 32%,5% 66%;
+}
+
+@media (max-width: 375px) {
+  .bg_content {
+    background-size: 126px 126px,310px 310px,150px 150px;
+    background-position: -77px 75px,108% 32%,5% 66%;
+  }
 }
 
 .info_box .title {
@@ -270,6 +417,7 @@ a {
 .sever_card .sever_pic {
   border-radius: 12px 12px 0 0;
   height: 260px;
+  object-fit: cover;
 }
 
 .sever_card h4 {
