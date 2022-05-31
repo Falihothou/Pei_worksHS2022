@@ -17,11 +17,6 @@
     }
 
     @include pad{
-        background-size: 50%,360px 360px;
-        height: 60vh;
-    }
-
-    @include mobile_L{
         height: auto;
         background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
         background-size: 334px auto;
@@ -33,7 +28,7 @@
 .hero_box{
     height: 60vh;
 
-    @include mobile_L{
+    @include pad{
         flex-direction: column;
         padding-top: 32px;
         height: 80vh;
@@ -67,14 +62,10 @@
         line-height: 1.5;
 
         @include pad_L {
-            font-size: 40px;
-        }
-
-        @include pad {
             font-size: 36px;
         }
 
-        @include mobile_L {
+        @include pad {
             font-size: 32px;
         }
 
@@ -100,7 +91,7 @@
     width: 49%;
     margin-left: auto;
 
-    @include mobile_L{
+    @include pad{
         width: 90%;
         margin: auto;
     }
@@ -128,7 +119,7 @@
         background: darken($c_base,20%);
     }
 
-    @include mobile_L {
+    @include pad {
         height: 50px;
         width: 50px;
         font-size: 14px;
@@ -146,9 +137,14 @@
     background-size: 360px 360px,310px 310px,150px 150px;
     background-position: -222px -180px,108% 32%,5% 66%;
 
-    @include mobile_L{
-        background-size: 126px 126px,310px 310px,150px 150px;
-        background-position: -77px 75px,108% 32%,5% 66%;
+    @include pad{
+        padding-top: 60px;
+        background-size: 126px 126px,135px 135px,150px 150px;
+        background-position: -60px 75px, calc(100% + 47px) 52%,5% 66%;
+    }
+
+    @include mobile{
+        background-position: -60px 75px, calc(100% + 47px) 45%,5% 66%;
     }
 
 }
@@ -161,11 +157,30 @@
         color: $c_black;
         text-align: center;
         font-weight: bold;
+
+        @include pad{
+            font-size: 28px;
+            line-height: 1.5;
+        }
     }
+
 
     .subtitle{
         font-size: 20px;
         text-align: center;
+        line-height: 1.5;
+
+        @include pad{
+            font-size: 18px;
+        }
+    }
+
+}
+
+.info_platform{
+
+    @include pad{
+        flex-wrap: wrap;
     }
 }
 
@@ -176,8 +191,21 @@
     flex-direction: column;
     align-items: center;
 
+    @include pad{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    @include mobile{
+        margin-bottom: 24px;
+    }
+
     .platform_img{
         width: 90px;
+
+        @include pad{
+            margin-bottom: 16px;
+        }
     }
 
     .platform_title{
@@ -185,6 +213,10 @@
         color: $c_black;
         text-align: center;
         font-weight: bold;
+
+        @include pad{
+            margin-bottom: 16px;
+        }
     }
 
     p{
@@ -194,43 +226,85 @@
     }
 }
 
+// video
+
+.info_sever{
+    align-items: stretch;
+
+    @include pad_L{
+        flex-wrap: wrap;
+        padding-right: 37px;
+        padding-left: 37px;
+    }
+}
+
 .sever_card{
     background: #fff;
-    width: 23.8%;
+    width: 23%;
 
-    .sever_pic{
+    @include pad_L{
+        width: 48%;
+        margin-bottom: 32px;
+    }
+
+    @include pad{
+        width: 100%;
+    }
+
+    .sever_img{
         border-radius: 12px 12px 0 0;
-        height: 260px;
         object-fit: cover;
     }
 
     h4{
-        padding: 16px 16px;
+        padding: 20px 0;
         color: $c_base;
         text-align: center;
     }
 
     p{
-        padding-left: 16px;
-        padding-right: 26px;
-        padding-bottom: 24px;
-        color: $c_black;
+        padding: 0 16px 24px 16px;
         line-height: 1.5;
         text-align: center;
+        color: $c_black;
     }
 }
 
+// video
 
+.info_feature{
+
+    @include pad_L{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+}
 
 .feature_cardList{
     display: flex;
     flex-wrap: wrap;
     width: 47%;
 
+    @include pad_L{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
     .feature_card{
         width: 45%;
         background: #fff;
         padding: 32px 32px 48px 32px;
+
+        @include pad-L{
+            padding: 24px;
+            margin-right: 0;
+            margin-bottom: 28px;
+        }
+
+        @include mobile{
+            width: 100%;
+        }
 
         .feature_pic{
             width: 86px;
@@ -262,17 +336,33 @@
     width: 42%;
     padding-right: 49px;
 
+    @include pad_L{
+        width: 100%;
+        padding-right: 0px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+
     h3{
         color: $c_black;
         font-size: 32px;
         line-height: 1.5;
         font-weight: bold;
+        @include pad_L{
+            text-align: center;
+        }
     }
 
     p{
         color: $c_black;
         font-size: 18px;
         line-height: 1.5;
+        @include pad_L{
+            text-align: center;
+        }
     }
 
 }
@@ -280,8 +370,9 @@
 .info_comment{
     padding-top: 104px;
 
-    @include mobile_L{
+    @include pad_L{
         flex-wrap: wrap;
+        padding-top: 48px;
     }
 }
 
@@ -291,8 +382,10 @@
     width: 30%;
     background: #fff;
 
-    @include mobile_L{
+    @include pad_L{
         width: 100%;
+        margin-top: 50px;
+        margin-bottom: 24px;
     }
 
     .pic_head{
@@ -317,10 +410,11 @@
     }
 
     .star_box{
-        min-width: 120px;
+        max-width: 120px;
 
         .star{
-            width: 16px;
+            max-width: 16px;
+            padding-right: 4px;
         }
     }
 

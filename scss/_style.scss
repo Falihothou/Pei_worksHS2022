@@ -3,6 +3,14 @@ $c_point:#FF5D50;
 $c_black:#221E1F;
 $c_gray:#747474;
 
+.flex_sb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 @mixin pad_L{
     @media(max-width:992px){
         @content;
@@ -10,12 +18,12 @@ $c_gray:#747474;
 }
 
 @mixin pad{
-    @media(max-width:767px){
+    @media(max-width:580px){
         @content;
     }
 }
 
-@mixin mobile_L{
+@mixin mobile{
     @media(max-width:414px){
         @content;
     }
@@ -32,42 +40,12 @@ $c_gray:#747474;
     }
 
     @include pad {
-        padding: 0 80px;
+        padding: 0 60px;
     }
 
-    @include mobile_L {
+    @include mobile {
         padding: 0 20px;
     }
-}
-
-.flex_sb{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.mb100{
-    margin-bottom: 100px;
-}
-
-.mb48{
-    margin-bottom: 48px;
-}
-
-.mb28{
-    margin-bottom: 28px;
-}
-
-.mb24{
-    margin-bottom: 24px;
-}
-
-.mb16{
-    margin-bottom: 16px;
-}
-
-.mr37{
-    margin-right: 37px;
 }
 
 .frame{
@@ -102,4 +80,28 @@ $c_gray:#747474;
     &:hover{
         background: darken($c_base,20%);
     }
+}
+
+.mb100{
+    margin-bottom: 100px;
+}
+
+.mb48{
+    margin-bottom: 48px;
+}
+
+.mb28{
+    margin-bottom: 28px;
+}
+
+.mb24{
+    margin-bottom: 24px;
+}
+
+.mb16{
+    margin-bottom: 16px;
+}
+
+.mr37{
+    margin-right: 37px;
 }

@@ -6,12 +6,12 @@
     }
 
     @include pad {
-        padding: 24px 80px;
+        padding: 24px 60px;
+        border-bottom: 2px solid #FFD153;
     }
 
-    @include mobile_L {
+    @include mobile {
         padding: 16px 20px;
-        border-bottom: 2px solid #FFD153;
     }
 
     .logo{
@@ -28,8 +28,8 @@
         /* IE8+           */
         -ms-interpolation-mode:nearest-neighbor;
 
-        @include mobile_L{
-            width: 140px;
+        @include mobile{
+            min-width: 140px;
             
         }
     }
