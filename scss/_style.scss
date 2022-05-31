@@ -24,7 +24,7 @@ $c_gray:#747474;
 }
 
 @mixin mobile{
-    @media(max-width:414px){
+    @media(max-width:415px){
         @content;
     }
 }
@@ -60,7 +60,7 @@ $c_gray:#747474;
     padding: 12px 0;
     text-align: center;
     text-decoration: none;
-    width: 128px;
+    min-width: 128px;
 
     &:hover{
         background: darken($c_point,20%);

@@ -95,7 +95,7 @@ a {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
   .container {
     padding: 0 20px;
   }
@@ -113,7 +113,7 @@ a {
   padding: 12px 0;
   text-align: center;
   text-decoration: none;
-  width: 128px;
+  min-width: 128px;
 }
 
 .btn_point:hover {
@@ -176,7 +176,7 @@ a {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
   .header {
     padding: 16px 20px;
   }
@@ -196,9 +196,9 @@ a {
   -ms-interpolation-mode: nearest-neighbor;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
   .header .logo {
-    min-width: 140px;
+    width: 130px;
   }
 }
 
@@ -362,7 +362,7 @@ a {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
   .bg_content {
     background-position: -60px 75px, calc(100% + 47px) 45%, 5% 66%;
   }
@@ -414,7 +414,7 @@ a {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
   .platform_card {
     margin-bottom: 24px;
   }
@@ -531,7 +531,7 @@ a {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
   .feature_cardList .feature_card {
     width: 100%;
   }
