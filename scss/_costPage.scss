@@ -44,11 +44,18 @@
     .m-hero_pic_cost{
         position: absolute;
         right: 0;
-        top: 0;
+        top: 60px;
         z-index: -1;
         display: none;
-        object-fit: contain;
-        height: 80vh;
+        width: 700px;
+        // height: 70vh;
+        
+
+        img{
+            object-fit: cover;
+            width: 100%;
+        }
+        
 
         @include pad{
             display: block;
