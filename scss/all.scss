@@ -3,6 +3,8 @@
 
 @import "layout";
 
+@import "costPage";
+
 
 .bg_main{
     height: 100vh;
@@ -27,10 +29,10 @@
 
 .hero_box{
     height: 60vh;
+    padding-top: 32px;
 
     @include pad{
         flex-direction: column;
-        padding-top: 32px;
         height: 80vh;
     }
 
@@ -290,6 +292,11 @@
         justify-content: space-between;
     }
 
+    @include mobile{
+        padding-right: 52px;
+        padding-left: 52px;
+    }
+
 
     .feature_card{
         width: 45%;
@@ -300,6 +307,7 @@
             padding: 24px;
             margin-right: 0;
             margin-bottom: 28px;
+            
         }
 
         @include mobile{
@@ -367,11 +375,13 @@
 
 }
 
+
 .info_comment{
     padding-top: 104px;
+    position: relative;
 
     @include pad_L{
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         padding-top: 48px;
     }
 }
@@ -421,10 +431,19 @@
 
 }
 
+.info_comment  .m-displayNone{
+    display: block;
+
+    @include pad_L{
+        display: none;
+    }
+}
+
 
 .comment_pageList{
     display: flex;
     justify-content: center;
+
     .comment_page{
         background: #DDDDDD;
         width: 10px;
@@ -432,13 +451,20 @@
         border-radius: 50%;
         margin-right: 8px;
     }
+    
+    .comment_page_on{
+        background: #FFD153;
+        width: 16px;
+        height: 10px;
+        border-radius: 50px;
+        margin-right: 8px;
+    }
+
 }
 
-.comment_page_active{
-    width: 16px;
-    background: #FFD153;
 
-}
+
+
 
 .bg_homeFooter{
     background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg) no-repeat;
@@ -464,3 +490,4 @@
         margin: 0 auto;
     }
 }
+

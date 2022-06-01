@@ -33,18 +33,22 @@ $c_gray:#747474;
 .container{
     max-width: 1366px;
     margin: 0 auto;
-    padding: 0 139px;
+    padding-left: 139px;
+    padding-right: 139px;
 
     @include pad_L {
-        padding: 0 100px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     @include pad {
-        padding: 0 60px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     @include mobile {
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 

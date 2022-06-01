@@ -80,24 +80,28 @@ a {
 .container {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 0 139px;
+  padding-left: 139px;
+  padding-right: 139px;
 }
 
 @media (max-width: 992px) {
   .container {
-    padding: 0 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
 @media (max-width: 580px) {
   .container {
-    padding: 0 60px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
 @media (max-width: 415px) {
   .container {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -172,6 +176,7 @@ a {
 @media (max-width: 580px) {
   .header {
     padding: 24px 60px;
+    background: #fff;
     border-bottom: 2px solid #FFD153;
   }
 }
@@ -209,6 +214,289 @@ a {
   padding: 20px 0;
 }
 
+.bg_mainCost {
+  height: 80vh;
+  position: relative;
+}
+
+.bg_mainCost h1 {
+  margin-top: 92px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #221E1F;
+}
+
+@media (max-width: 580px) {
+  .bg_mainCost h1 {
+    font-size: 32px;
+    margin-top: 48px;
+  }
+}
+
+.bg_mainCost h2 {
+  color: #736669;
+}
+
+.bg_mainCost .hero_bg_cost {
+  position: absolute;
+  background: #F7F9FD;
+  height: 70vh;
+  width: 100%;
+  border-radius: 0 0 0 300px;
+  right: 0;
+  top: 0;
+  z-index: -99;
+}
+
+.bg_mainCost .hero_pic_cost {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@media (max-width: 580px) {
+  .bg_mainCost .hero_pic_cost {
+    display: none;
+  }
+}
+
+.bg_mainCost .m-hero_pic_cost {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  display: none;
+  object-fit: contain;
+  height: 80vh;
+}
+
+@media (max-width: 580px) {
+  .bg_mainCost .m-hero_pic_cost {
+    display: block;
+  }
+}
+
+.cost_classList {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 54px;
+}
+
+@media (max-width: 992px) {
+  .cost_classList {
+    overflow-y: auto;
+    justify-content: flex-start;
+  }
+  .cost_classList::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.cost_classList .cost_class {
+  border: 1px solid #56C4C5;
+  border-radius: 50px;
+  color: #56C4C5;
+  padding: 16px 32px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 0 12px;
+}
+
+.cost_classList .cost_class:hover {
+  background: #a2dfdf;
+  color: #fff;
+}
+
+@media (max-width: 580px) {
+  .cost_classList .cost_class {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 415px) {
+  .cost_classList .cost_class {
+    padding: 12px 16px;
+    margin: 0 3px;
+  }
+}
+
+.cost_classList .cost_class_on {
+  background: #56C4C5;
+  color: #fff;
+}
+
+.info_bg {
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg) no-repeat;
+  background-size: 361px;
+  background-position: -276px 260px;
+}
+
+.cost_content_box {
+  max-width: 909px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+  .cost_content_box {
+    flex-direction: column;
+  }
+}
+
+.cost_content_box a {
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.cost_content_card {
+  width: 48%;
+  padding-right: 24px;
+  padding-left: 24px;
+  background: #fff;
+}
+
+@media (max-width: 992px) {
+  .cost_content_card {
+    width: 80%;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 580px) {
+  .cost_content_card {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+.cost_content_card h4 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 16px 0;
+  border-bottom: 1px solid #DDDDDD;
+  color: #221E1F;
+  text-align: center;
+}
+
+.cost_content_card p {
+  text-align: center;
+  line-height: 1.5;
+  color: #221E1F;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.cost_number_box {
+  margin-bottom: 32px;
+}
+
+.cost_number_box .cost_number {
+  padding: 24px 0;
+  width: 43%;
+  background: #F5F5F5;
+  border-radius: 12px;
+}
+
+.cost_number_box .cost_number span {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.cost_number_box .cost_number p {
+  font-size: 32px;
+  text-align: center;
+  padding: 0;
+}
+
+.cost_number_box .cost_number p sub {
+  font-size: 12px;
+}
+
+@media (max-width: 580px) {
+  .cost_number_box .cost_number p {
+    font-size: 28px;
+  }
+}
+
+.cost_number_box .equal {
+  font-size: 29px;
+}
+
+.cost_number_box .highlight {
+  color: #56C4C5;
+}
+
+.contentList {
+  margin-bottom: 32px;
+}
+
+.contentList .content {
+  display: flex;
+  align-items: center;
+}
+
+.contentList .iconCheck {
+  margin-right: 12px;
+  height: 16px;
+}
+
+.contentList p {
+  padding: 8px 0;
+  text-align: left;
+}
+
+.QA_list {
+  max-width: 909px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.QA_list .QA_title a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #221E1F;
+  padding: 16px 32px;
+}
+
+@media (max-width: 580px) {
+  .QA_list .QA_title a {
+    font-size: 16px;
+    padding: 16px;
+  }
+}
+
+.QA_list .QA_title a .icon_plus {
+  display: block;
+}
+
+.QA_list .QA_title a .icon_minus {
+  display: none;
+}
+
+.QA_list .QA_title a:hover {
+  background: #F7F9FD;
+}
+
+.QA_list .QA_title .active {
+  color: #56C4C5;
+  font-weight: bold;
+}
+
+.QA_list .QA_title p {
+  display: none;
+  color: #747474;
+  line-height: 2;
+  padding: 16px 32px 32px 32px;
+}
+
 .bg_main {
   height: 100vh;
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg);
@@ -235,12 +523,12 @@ a {
 
 .hero_box {
   height: 60vh;
+  padding-top: 32px;
 }
 
 @media (max-width: 580px) {
   .hero_box {
     flex-direction: column;
-    padding-top: 32px;
     height: 80vh;
   }
 }
@@ -517,6 +805,13 @@ a {
   }
 }
 
+@media (max-width: 415px) {
+  .feature_cardList {
+    padding-right: 52px;
+    padding-left: 52px;
+  }
+}
+
 .feature_cardList .feature_card {
   width: 45%;
   background: #fff;
@@ -604,11 +899,11 @@ a {
 
 .info_comment {
   padding-top: 104px;
+  position: relative;
 }
 
 @media (max-width: 992px) {
   .info_comment {
-    flex-wrap: wrap;
     padding-top: 48px;
   }
 }
@@ -658,6 +953,16 @@ a {
   padding-right: 4px;
 }
 
+.info_comment .m-displayNone {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .info_comment .m-displayNone {
+    display: none;
+  }
+}
+
 .comment_pageList {
   display: flex;
   justify-content: center;
@@ -671,9 +976,12 @@ a {
   margin-right: 8px;
 }
 
-.comment_page_active {
-  width: 16px;
+.comment_pageList .comment_page_on {
   background: #FFD153;
+  width: 16px;
+  height: 10px;
+  border-radius: 50px;
+  margin-right: 8px;
 }
 
 .bg_homeFooter {

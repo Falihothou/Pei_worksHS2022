@@ -1,0 +1,267 @@
+.bg_mainCost{
+    height: 80vh;
+    position: relative;
+
+
+    h1{
+        margin-top: 92px;
+        font-size: 48px;
+        font-weight: bold;
+        color: $c_black;
+
+        @include pad {
+            font-size: 32px;
+            margin-top: 48px;
+        }
+    }
+
+    h2{
+        color: lighten($c_black, 30%);
+    }
+
+    .hero_bg_cost{
+        position: absolute;
+        background: #F7F9FD;
+        height: 70vh;
+        width: 100%;
+        border-radius: 0 0 0 300px;
+        right: 0;
+        top: 0;
+        z-index: -99;
+    }
+
+    .hero_pic_cost{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+
+        @include pad{
+            display: none;
+        }
+    }
+
+    .m-hero_pic_cost{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        display: none;
+        object-fit: contain;
+        height: 80vh;
+
+        @include pad{
+            display: block;
+        }
+    }
+    
+}
+
+.cost_classList{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 54px;
+
+    @include pad_L{
+        overflow-y:auto;
+        justify-content: flex-start;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+
+    .cost_class{
+        border: 1px solid $c_base;
+        border-radius: 50px;
+        color:$c_base;
+        padding: 16px 32px;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+
+        margin:0 12px;
+    
+        &:hover{
+            background: lighten($c_base,20%);
+            color: #fff;
+        }
+
+        @include pad{
+            padding: 12px 20px;
+            font-size: 16px;
+            margin:0 6px;
+        }
+
+        @include mobile{
+            padding: 12px 16px;
+            margin:0 3px;
+        }
+    }
+
+    .cost_class_on{
+        background: #56C4C5;
+        color: #fff;
+    }
+}
+
+.info_bg{
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg) no-repeat;
+    background-size: 361px;
+    background-position: -276px 260px;
+}
+
+.cost_content_box{
+    max-width: 909px;
+    margin: auto;
+    margin-bottom: 100px;
+
+    @include pad_L{
+        flex-direction: column;
+    }
+
+    a{
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+}
+
+.cost_content_card{
+    width: 48%;
+    padding-right: 24px;
+    padding-left: 24px;
+    background: #fff;
+
+    @include pad_L{
+        width: 80%;
+        margin-bottom: 32px;
+    }
+
+    @include pad{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    h4{
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.5;
+        padding: 16px 0;
+        border-bottom: 1px solid #DDDDDD;
+        color: $c_black;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        line-height: 1.5;
+        color: $c_black;
+        padding: 32px 0;
+        text-align: center;
+    }
+}
+
+.cost_number_box{
+    margin-bottom: 32px;
+
+    .cost_number{
+        padding: 24px 0;
+        width: 43%;
+        background: #F5F5F5;
+        border-radius: 12px;
+
+        span{
+            display: block;
+            font-size: 12px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        p{
+            font-size: 32px;
+            text-align: center;
+            padding: 0;
+            sub{
+                font-size: 12px;
+            }
+
+            @include pad{
+                font-size: 28px;
+            }
+        }
+    }
+
+    .equal{
+        font-size: 29px;
+    }
+
+    .highlight{
+        color: $c_base;
+    }
+}
+
+.contentList{
+    margin-bottom: 32px;
+
+    .content{
+        display: flex;
+        align-items: center;
+    }
+
+    .iconCheck{
+        margin-right: 12px;
+        height: 16px;
+    }
+
+    p{
+        padding: 8px 0;
+        text-align: left;
+    }
+}
+
+.QA_list{
+    max-width: 909px;
+    margin: 0 auto;
+    line-height: 1.5;
+    .QA_title{
+        
+        a{
+            font-size: 18px;
+            text-decoration: none;
+            color: $c_black;
+            padding: 16px 32px;
+
+            @include pad{
+                font-size: 16px;
+                padding: 16px;
+            }
+
+
+            .icon_plus{
+                display: block;
+            }
+
+            .icon_minus{
+                display:none;
+            }
+    
+            &:hover{
+                background: #F7F9FD;
+            }
+        }
+
+        .active{
+            color: $c_base;
+            font-weight: bold;
+        }
+
+        p{
+            display:none;
+            color: $c_gray;
+            line-height: 2;
+            padding: 16px 32px 32px 32px;
+        }
+    }
+
+}
