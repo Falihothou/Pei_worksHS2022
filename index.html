@@ -13,7 +13,13 @@
 
     <link rel="icon" href="images/title_logo.png">
 
+    <!-- swiper 套件CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- swiper 套件CSS -->
     <link rel="stylesheet" href="css/all.css">
+
+
+
     <title>Pei_HSwork2</title>
 </head>
 <body>
@@ -143,69 +149,154 @@
 
         </div>
 
+
+
         <div class="info_box container">
             <h3 class="title">好評如潮</h3>
 
-            <ul class="info_comment flex_sb mb24">
-                <li class="comment_card frame">
-                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user01.jpg?raw=true" alt="user1" class="pic_head">
-                    <p>原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
-                    <h4>清心寡慾設計公司</h4>
-                    <div class="rank_box flex_sb">
-                        <span>Lina 執行長</span>
-                        <ul class="star_box flex_sb">
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                        </ul>
-                    </div>
-                </li>
+            <!-- swiper 套件開始 -->
+            <div class="swiper" id="comment-swiper">
+                <ul class="swiper-wrapper flex_sb mb24 ">
+                    <li class="swiper-slide">
+                        <div class="comment_card frame">
+                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user01.jpg?raw=true" alt="user1" class="pic_head">
+                            <p>原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
+                            <h4>清心寡慾設計公司</h4>
+                            <div class="rank_box flex_sb">
+                                <span>Lina 執行長</span>
+                                <ul class="star_box flex_sb">
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
 
-                <li class="comment_card frame m-displayNone">
-                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user02.jpg?raw=true" alt="user1" class="pic_head">
-                    <p>團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
-                    <h4>subwhat 行銷公司</h4>
-                    <div class="rank_box flex_sb">
-                        <span>Zoe 活動長</span>
-                        <ul class="star_box flex_sb">
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="swiper-slide">
+                        <div class="comment_card frame">
+                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user02.jpg?raw=true" alt="user2" class="pic_head">
+                            <p>團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
+                            <h4>subwhat 行銷公司</h4>
+                            <div class="rank_box flex_sb">
+                                <span>Zoe 活動長</span>
+                                <ul class="star_box flex_sb">
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
 
-                <li class="comment_card frame m-displayNone">
-                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user03.jpg?raw=true" alt="user1" class="pic_head">
-                    <p>經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
-                    <h4>油土伯</h4>
-                    <div class="rank_box flex_sb">
-                        <span>HowBig</span>
-                        <ul class="star_box flex_sb">
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                            <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
-                        </ul>
-                    </div>
-                </li>
+                    <li class="swiper-slide">
+                        <div class="comment_card frame">
+                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user03.jpg?raw=true" alt="user3" class="pic_head">
+                            <p>經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
+                            <h4>油土伯</h4>
+                            <div class="rank_box flex_sb">
+                                <span>HowBig</span>
+                                <ul class="star_box flex_sb">
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
 
-            </ul>
+                    <li class="swiper-slide">
+                        <div class="comment_card frame">
+                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" width="80" alt="user1" class="pic_head">
+                            <p>天啊!聊天機器人真是太棒了，從此不再孤單，終於不用開著電視睡覺拉～</p>
+                            <h4>一個人吃飯有限公司</h4>
+                            <div class="rank_box flex_sb">
+                                <span>Happy Nighter</span>
+                                <ul class="star_box flex_sb">
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
 
-            <ul class="comment_pageList mb100">
+                    <li class="swiper-slide">
+                        <div class="comment_card frame">
+                            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="user5" class="pic_head">
+                            <p>弗勞德在不經意間這樣說過，一切理論都反對自由意志。這句話反映了問題的急切性。總結來說，若思緒夠清晰，那麼機器人也就不那麼複雜了。</p>
+                            <h4>唬爛公司</h4>
+                            <div class="rank_box flex_sb">
+                                <span>robot 執行長</span>
+                                <ul class="star_box flex_sb">
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <div class="comment_card frame">
+                            <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="user5" class="pic_head">
+                            <p>若能夠洞悉機器人各種層面的含義，勢必能讓思維再提高一個層級。我們不得不相信，現在，正視機器人的問題，是非常非常重要的。</p>
+                            <h4>不得了熬夜工作室</h4>
+                            <div class="rank_box flex_sb">
+                                <span>安眠藥</span>
+                                <ul class="star_box flex_sb">
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <div class="comment_card frame">
+                            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/user01.jpg?raw=true" alt="user1" class="pic_head">
+                            <p>我們仍然需要對機器人保持懷疑的態度。不要覺得機器人很複雜，機器人可能比你想的還要更複雜。</p>
+                            <h4>總是想太多</h4>
+                            <div class="rank_box flex_sb">
+                                <span>姊姊</span>
+                                <ul class="star_box flex_sb">
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                    <li class="star"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg" alt="star"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <!-- swiper 套件的分頁圓點 -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- <ul class="comment_pageList mb100">
                 <li><a class="comment_page_on comment_page" href="#"></a></li>
                 <li><a class="comment_page" href="#"></a></li>
                 <li><a class="comment_page" href="#"></a></li>
                 <li><a class="comment_page" href="#"></a></li>
                 <li><a class="comment_page" href="#"></a></li>
 
-            </ul>
-
+            </ul> -->
         </div>
 
         <div class="bg_homeFooter">
@@ -221,6 +312,10 @@
     </div>
     
     <script src="./jQ/jquery.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="./jQ/all.js"></script>
 
 </body>

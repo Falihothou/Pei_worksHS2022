@@ -901,37 +901,20 @@ a {
   }
 }
 
-.info_comment {
-  padding-top: 104px;
-  position: relative;
-}
-
-@media (max-width: 992px) {
-  .info_comment {
-    padding-top: 48px;
-  }
-}
-
 .comment_card {
   padding: 48px 32px 24px 32px;
   position: relative;
-  width: 30%;
+  height: 100%;
   background: #fff;
-}
-
-@media (max-width: 992px) {
-  .comment_card {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 24px;
-  }
 }
 
 .comment_card .pic_head {
   border-radius: 50%;
   width: 80px;
+  height: 80px;
   position: absolute;
   top: -50px;
+  object-fit: cover;
 }
 
 .comment_card p {
@@ -940,6 +923,7 @@ a {
   padding-bottom: 24px;
   border-bottom: 1px solid #DDDDDD;
   margin-bottom: 24px;
+  height: 121px;
 }
 
 .comment_card h4 {
@@ -957,35 +941,38 @@ a {
   padding-right: 4px;
 }
 
-.info_comment .m-displayNone {
-  display: block;
+:root {
+  --swiper-theme-color: #ffd153;
 }
 
-@media (max-width: 992px) {
-  .info_comment .m-displayNone {
-    display: none;
-  }
+.swiper {
+  padding: 120px 16px 0 0;
 }
 
-.comment_pageList {
+.swiper-slide {
+  /* Center slide text vertically */
+}
+
+.swiper-wrapper {
+  padding: 0 0 0 8px;
   display: flex;
-  justify-content: center;
+  align-items: stretch;
 }
 
-.comment_pageList .comment_page {
-  background: #DDDDDD;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right: 8px;
+.swiper-slide {
+  width: 100%;
+  height: initial;
 }
 
-.comment_pageList .comment_page_on {
-  background: #FFD153;
-  width: 16px;
-  height: 10px;
-  border-radius: 50px;
-  margin-right: 8px;
+.swiper-pagination {
+  position: static;
+  margin-top: 24px;
+  margin-bottom: 100px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 8px;
 }
 
 .bg_homeFooter {
