@@ -6,7 +6,7 @@ $(document) .ready(function(){
         $('html , body').animate({ scrollTop:0 } , 500); 
     });
 
-    // 輪播...做不出來，只能做點，點點變化
+    // 輪播...做不出來，只能做點，點點變化(下方有校長與助教教學套件)
 
     // $(".comment_page").click(function(e){
     //     e.preventDefault();
@@ -49,7 +49,7 @@ $(document) .ready(function(){
 
 })
 
-// 感謝助教提供的大法好
+// 感謝校長與助教提供的大法好
 function initSwiper() {
     /* 
     id="comment-swiper" 區塊是我想要使用 swiper 套件的範圍
