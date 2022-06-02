@@ -8,13 +8,12 @@ $(document) .ready(function(){
 
 
     // 輪播...做不出來，只能做點，點點變化
-    // 原本點點是用ul>li做，但class下在a，.siblings兄弟曾選不到包在另一個li內的a連結，又因為a連結是色塊沒圖，如果class下在li就點擊不到東西Q口Q，只好換成div>a
 
     $(".comment_page").click(function(e){
         e.preventDefault();
 
         $(this).addClass('comment_page_on');
-        $(this).siblings().removeClass("comment_page_on");
+        $(this).parent().siblings().find('a').removeClass("comment_page_on");
         
     });
 
