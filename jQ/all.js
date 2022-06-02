@@ -49,7 +49,7 @@ $(document) .ready(function(){
 
 })
 
-
+// 感謝助教提供的大法好
 function initSwiper() {
     /* 
     id="comment-swiper" 區塊是我想要使用 swiper 套件的範圍
