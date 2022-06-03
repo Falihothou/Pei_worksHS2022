@@ -15,25 +15,25 @@ $(document) .ready(function(){
         if ($(this).text() == '>25000位') {
             const regex2 = /\>\d{5}/;
             const match2 = $(this).text().match(regex2);
-            $('.highlight').text(match2[0]);
-            $('.month_base').text('200');
-            $('.month_pro').text('1200');
+            $('.highlight p').text(match2[0]);
+            $('.month_base p').text('200');
+            $('.month_pro p').text('1200');
         } else {
             const regex = /\d{5}/;
             const match = $(this).text().match(regex);
-            $('.highlight').text(match[0]);
-            if (match[0] == '10000') {
-                $('.month_base').text('600');
-                $('.month_pro').text('1600');
+            $('.highlight p').text(match[0]);
+            if (match[0] == '10000 ') {
+                $('.month_base p').text('600');
+                $('.month_pro p').text('1600');
             } else if (match[0] == '15000') {
-                $('.month_base').text('500');
-                $('.month_pro').text('1500');
+                $('.month_base p').text('500');
+                $('.month_pro p').text('1500');
             } else if (match[0] == '20000') {
-                $('.month_base').text('400');
-                $('.month_pro').text('1400');
+                $('.month_base p').text('400');
+                $('.month_pro p').text('1400');
             } else if (match[0] == '25000') {
-                $('.month_base').text('300');
-                $('.month_pro').text('1300');
+                $('.month_base p').text('300');
+                $('.month_pro p').text('1300');
             }
         }
     });

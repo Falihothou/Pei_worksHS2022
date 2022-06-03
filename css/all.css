@@ -414,28 +414,78 @@ a {
   text-align: center;
 }
 
-.cost_number_box .cost_number p {
+.cost_number_box .cost_number .highlight {
+  text-align: center;
+}
+
+.cost_number_box .cost_number .highlight p {
   font-size: 32px;
   text-align: center;
   padding: 0;
-}
-
-.cost_number_box .cost_number p sub {
-  font-size: 12px;
+  color: #56C4C5;
+  display: inline-block;
 }
 
 @media (max-width: 580px) {
-  .cost_number_box .cost_number p {
+  .cost_number_box .cost_number .highlight p {
     font-size: 28px;
   }
 }
 
-.cost_number_box .equal {
-  font-size: 29px;
+.cost_number_box .cost_number .highlight sub {
+  font-size: 12px;
+  color: #56C4C5;
+  margin-left: 4px;
 }
 
-.cost_number_box .highlight {
-  color: #56C4C5;
+.cost_number_box .cost_number .month_base {
+  text-align: center;
+}
+
+.cost_number_box .cost_number .month_base p {
+  font-size: 32px;
+  text-align: center;
+  padding: 0;
+  color: #221E1F;
+  display: inline-block;
+}
+
+@media (max-width: 580px) {
+  .cost_number_box .cost_number .month_base p {
+    font-size: 28px;
+  }
+}
+
+.cost_number_box .cost_number .month_base sub {
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.cost_number_box .cost_number .month_pro {
+  text-align: center;
+}
+
+.cost_number_box .cost_number .month_pro p {
+  font-size: 32px;
+  text-align: center;
+  padding: 0;
+  color: #221E1F;
+  display: inline-block;
+}
+
+@media (max-width: 580px) {
+  .cost_number_box .cost_number .month_pro p {
+    font-size: 28px;
+  }
+}
+
+.cost_number_box .cost_number .month_pro sub {
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.cost_number_box .equal {
+  font-size: 29px;
 }
 
 .contentList {
@@ -946,10 +996,6 @@ a {
 
 .swiper {
   padding: 120px 16px 0 0;
-}
-
-.swiper-slide {
-  /* Center slide text vertically */
 }
 
 .swiper-wrapper {
