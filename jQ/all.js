@@ -6,15 +6,39 @@ $(document) .ready(function(){
         $('html , body').animate({ scrollTop:0 } , 500); 
     });
 
-    // 輪播...做不出來，只能做點，點點變化(下方有校長與助教教學套件)
 
-    // $(".comment_page").click(function(e){
-    //     e.preventDefault();
+    //選擇方案
+    $('.cost_classList li a').click(function (e) {
+        e.preventDefault();
+        $(this).toggleClass('cost_class_on');
+        $(this).parent().siblings().find('a').removeClass('cost_class_on');
+        if ($(this).text() == '>25000位') {
+            const regex2 = /\>\d{5}/;
+            const match2 = $(this).text().match(regex2);
+            $('.highlight').text(match2[0]);
+            $('.month_base').text('200');
+            $('.month_pro').text('1200');
+        } else {
+            const regex = /\d{5}/;
+            const match = $(this).text().match(regex);
+            $('.highlight').text(match[0]);
+            if (match[0] == '10000') {
+                $('.month_base').text('600');
+                $('.month_pro').text('1600');
+            } else if (match[0] == '15000') {
+                $('.month_base').text('500');
+                $('.month_pro').text('1500');
+            } else if (match[0] == '20000') {
+                $('.month_base').text('400');
+                $('.month_pro').text('1400');
+            } else if (match[0] == '25000') {
+                $('.month_base').text('300');
+                $('.month_pro').text('1300');
+            }
+        }
+    });
 
-    //     $(this).addClass('comment_page_on');
-    //     $(this).parent().siblings().find('a').removeClass("comment_page_on");
-        
-    // });
+
 
     // QA 網路上找的方法
     $(".QA_title").click(function(e){
@@ -48,6 +72,9 @@ $(document) .ready(function(){
     });
 
 })
+
+
+
 
 // 感謝校長與助教提供的大法好
 function initSwiper() {

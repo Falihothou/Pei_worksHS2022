@@ -375,28 +375,10 @@
 
 }
 
-
-// .info_comment{
-//     padding-top: 104px;
-//     // position: relative;
-
-//     @include pad_L{
-//         // flex-wrap: wrap;
-//         padding-top: 48px;
-//     }
-// }
-
 .comment_card{
     padding: 48px 32px 24px 32px;
     position: relative;
-    // width: 30%;
     background: #fff;
-
-    // @include pad_L{
-    //     width: 100%;
-    //     margin-top: 50px;
-    //     margin-bottom: 24px;
-    // }還沒做JS時 RWD剩一個評論的狀況
 
     .pic_head{
         border-radius: 50%;
@@ -436,65 +418,15 @@
 
 }
 
-// .info_comment  .m-displayNone{
-//     display: block;
 
-//     @include pad_L{
-//         display: none;
-//     }
-// } 還沒做JS時 RWD剩一個評論的狀況
-
-
-// .comment_pageList{
-//     display: flex;
-//     justify-content: center;
-
-//     .comment_page{
-//         background: #DDDDDD;
-//         width: 10px;
-//         height: 10px;
-//         border-radius: 50%;
-//         margin-right: 8px;
-//     }
-    
-//     .comment_page_on{
-//         background: #FFD153;
-//         width: 16px;
-//         height: 10px;
-//         border-radius: 50px;
-//         margin-right: 8px;
-//     }
-
-// }
-
-
-// swiper 套件CSS
+// swiper 套件CSS 開始
+// (最原始套件設定會在html Link讀取的套件CSS內，
+// 此區設定都是為了符合目前版面，蓋掉原始css，所以有些設定會在這找不到)
 :root {
     --swiper-theme-color: #ffd153;
 }
 .swiper {
     padding: 120px 16px 0 0;
-
-    // &-slide {
-    //     // text-align: center;(預設的)
-    //     // font-size: 18px;(預設的)
-    //     // background: #fff;(預設的)
-    
-    //     /* Center slide text vertically */
-    //     // display: -webkit-box;
-    //     // display: -ms-flexbox;
-    //     // display: -webkit-flex;
-    //     // display: flex;
-        
-    //     // -webkit-box-pack: center;
-    //     // -ms-flex-pack: center;
-    //     // -webkit-justify-content: center;
-    //     // justify-content: center;
-    //     // -webkit-box-align: center;
-    //     // -ms-flex-align: center;
-    //     // -webkit-align-items: center;
-    //     // align-items: center;
-    // }套件嘗試的血淚 我要留著
 
     &-wrapper {
         padding: 0 0 0 8px;
@@ -519,9 +451,7 @@
     }
 }
 
-// swiper 套件CSS
-
-
+// swiper 套件CSS 結束
 
 
 
